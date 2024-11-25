@@ -157,8 +157,8 @@ const About = () => {
               Currently, I'm working as a Technical Lead at{' '}
               <a href="https://gluelabs.com/">Glue Labs</a>, where I lead product development and
               mentor teams. I've had the opportunity to work on various exciting projects including{' '}
-              <a href="https://fifo.im">FIFO.im</a>, <a href="https://dashgen.in">Dashgen</a>, and
-              several other innovative solutions.
+              <a href="https://fifo.im">FIFO</a>, <a href="https://id.glue.is">Glue Identity</a>,
+              and several other innovative solutions.
             </p>
 
             <p>

@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '2'
 title: 'Glue Identity'
 cover: './demo.png'
 external: 'https://id.glue.is'

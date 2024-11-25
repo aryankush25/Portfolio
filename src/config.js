@@ -14,6 +14,10 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://linkedin.com/in/aryankush25/',
     },
+    {
+      name: 'Medium',
+      url: 'https://medium.com/@aryankush25',
+    },
   ],
 
   navLinks: [

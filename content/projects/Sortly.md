@@ -1,5 +1,5 @@
 ---
-date: '2023-05-01'
+date: '2024-06-01'
 title: 'Sortly'
 github: ''
 external: 'https://www.sortly.com/'

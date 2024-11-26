@@ -154,11 +154,20 @@ const About = () => {
             </p>
 
             <p>
-              Currently, I'm working as a Technical Lead at{' '}
+              I'm currently working as a Technical Lead at{' '}
               <a href="https://gluelabs.com/">Glue Labs</a>, where I lead product development and
               mentor teams. I've had the opportunity to work on various exciting projects including{' '}
-              <a href="https://fifo.im">FIFO</a>, <a href="https://id.glue.is">Glue Identity</a>,
-              and several other innovative solutions.
+              <a href="https://fifo.im">FIFO</a>, <a href="https://glue.is">Glue</a>,{' '}
+              <a href="https://id.glue.is">Glue Identity</a>, and several other innovative
+              solutions.
+            </p>
+
+            <p>
+              I'm also incredibly excited about my personal project{' '}
+              <a href="https://dashgen.in">Dashgen</a> - an AI-powered platform that I'm building to
+              revolutionize how an individual interact with LLMs. It provides a unified interface
+              for working with various AI models like OpenAI, Anthropic, Grok, Gemini(Google Gen AI)
+              and Mistral. I'd love for you to check it out!
             </p>
 
             <p>

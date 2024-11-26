@@ -7,7 +7,7 @@ range: 'January 2022 - Present'
 url: 'https://gluelabs.com/'
 ---
 
-- Led product development at Glue Labs, from conceptualization to scaling, for products like FIFO.im, Glue Mobile App, xG, and Glue Identity
+- Led product development at Glue Labs, from conceptualization to scaling, for products like FIFO.im, Glue, xG, and Glue Identity
 - Designed user-centric UX flows and architected repositories using best practices to ensure scalability and performance
 - Conducted code reviews to improve quality, security, and compliance with standards
 - Streamlined workflows through detailed documentation, enhancing onboarding and collaboration

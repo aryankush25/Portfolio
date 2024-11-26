@@ -2,7 +2,7 @@
 date: '2023-05-01'
 title: 'Sortly'
 github: ''
-external: ''
+external: 'https://www.sortly.com/'
 tech:
   - React
   - Redux

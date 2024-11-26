@@ -2,7 +2,7 @@
 date: '2023-09-01'
 title: 'Torii Homes'
 github: ''
-external: ''
+external: 'https://www.toriihomes.com/'
 tech:
   - NestJS
   - React Native

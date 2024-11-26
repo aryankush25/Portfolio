@@ -2,7 +2,9 @@
 date: '2023-06-01'
 title: 'Acrobody'
 github: ''
-external: ''
+external: 'https://acrobody.com/'
+ios: ''
+android: ''
 tech:
   - React
   - React Native

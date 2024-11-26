@@ -2,7 +2,7 @@
 date: '2023-08-01'
 title: 'Hotcoldbags'
 github: ''
-external: ''
+external: 'https://hotcoldbags.com/'
 tech:
   - Shopify
   - Liquid

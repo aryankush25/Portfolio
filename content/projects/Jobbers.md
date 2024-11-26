@@ -7,7 +7,7 @@ tech:
   - HTML
   - CSS
 company: 'Personal'
-showInProjects: true
+showInProjects: false
 ---
 
 A web-based job portal interface built with HTML and CSS, featuring a clean and responsive design for job listings and applications.

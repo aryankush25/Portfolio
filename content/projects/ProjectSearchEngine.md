@@ -6,7 +6,7 @@ external: ''
 tech:
   - C
 company: 'Personal'
-showInProjects: true
+showInProjects: false
 ---
 
 A web crawler and search engine implementation in C, featuring URL crawling and indexing capabilities for efficient web page searching.

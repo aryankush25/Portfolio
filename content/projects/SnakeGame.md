@@ -6,7 +6,7 @@ external: ''
 tech:
   - C
 company: 'Personal'
-showInProjects: true
+showInProjects: false
 ---
 
 A classic Snake game implementation in C, featuring console-based graphics and user controls for an interactive gaming experience.

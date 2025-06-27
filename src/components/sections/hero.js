@@ -65,12 +65,24 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm a Technical Lead with 5+ years of experience in software development, specializing in
-        building scalable and innovative solutions. Currently, I'm leading product development at{' '}
+        I'm a Senior Software Engineer at{' '}
+        <a href="https://www.thoughtworks.com/" target="_blank" rel="noreferrer">
+          Thoughtworks
+        </a>{' '}
+        and former Technical Lead at{' '}
         <a href="https://gluelabs.com/" target="_blank" rel="noreferrer">
           Glue Labs
         </a>
-        , where I focus on creating high-performance applications and mentoring teams.
+        , with 6+ years of experience in software development, specializing in building scalable and
+        innovative solutions.
+      </p>
+      <p>
+        Currently, I'm building{' '}
+        <a href="https://dashgen.in/" target="_blank" rel="noreferrer">
+          Dashgen
+        </a>{' '}
+        — a unified platform for multiple AI models including OpenAI, Anthropic, Google Gemini,
+        Mistral, xAI and DeepSeek.
       </p>
     </>
   );

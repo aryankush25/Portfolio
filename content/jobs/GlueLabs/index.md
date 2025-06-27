@@ -2,8 +2,8 @@
 date: '2022-01-01'
 title: 'Technical Lead'
 company: 'Glue Labs'
-location: 'India'
-range: 'January 2022 - Present'
+location: 'New Delhi, India'
+range: 'January 2022 - January 2025'
 url: 'https://gluelabs.com/'
 ---
 

@@ -19,30 +19,36 @@ const StyledAboutSection = styled.section`
   }
 `;
 const StyledText = styled.div`
-  ul.skills-list {
+  .skills-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
-    padding: 0;
-    margin: 20px 0 0 0;
-    overflow: hidden;
-    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 15px;
+  }
 
-    li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 20px;
-      font-family: var(--font-mono);
-      font-size: var(--fz-xs);
+  .skills-category {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
 
-      &:before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: var(--green);
-        font-size: var(--fz-sm);
-        line-height: 12px;
-      }
+  .skills-text {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    color: var(--slate);
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+  }
+
+  @media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+
+    .skills-text {
+      font-size: var(--fz-sm);
     }
   }
 `;
@@ -125,20 +131,70 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = [
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'React Native',
-    'Node.js',
-    'Next.js',
-    'NestJS',
-    'Flutter',
-    'GraphQL',
-    'PostgreSQL',
-    'Redis',
-    'AWS',
-  ];
+  // Core skills by category
+  const skills = {
+    languages: ['JavaScript', 'TypeScript', 'Python', 'C++'],
+    backend: [
+      'Node.js',
+      'Nest.js',
+      'Express.js',
+      'Fastify',
+      'Flask',
+      'FastAPI',
+      'Django',
+      'SQL',
+      'PostgreSQL',
+      'MongoDB',
+      'Kafka',
+      'Redis',
+      'Socket.IO',
+      'Sequelize ORM',
+      'TypeORM',
+      'SQLAlchemy',
+      'Alembic',
+      'OAuth 2.0',
+      'OpenID Connect',
+      'Ory Kratos',
+      'Ory Hydra',
+      'Microservices',
+      'Distributed Systems',
+    ],
+    devops: [
+      'Docker',
+      'Kubernetes',
+      'Langchain',
+      'GitHub Actions',
+      'Buildkite',
+      'Terraform',
+      'GraphQL',
+      'Docker Containerisation',
+      'Firebase',
+      'Supabase',
+      'AWS S3',
+      'AWS EC2',
+      'AWS SES',
+      'AWS RDS',
+      'Nginx',
+    ],
+    frontend: [
+      'React.js',
+      'React Native',
+      'Next.js',
+      'Flutter',
+      'TailwindCSS',
+      'Redux',
+      'Redux Saga',
+      'React Query',
+      'Zustand',
+      'Material UI',
+      'Styled Components',
+      'HTML',
+      'CSS',
+      'Svelte',
+    ],
+  };
+
+  // No need to combine all skills as we're displaying them by category
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -148,26 +204,27 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Aryan and I'm a software engineer with 5+ years of experience in
-              building innovative and scalable solutions. I specialize in full-stack development
-              with expertise in JavaScript, TypeScript, React, Node.js, React Native, and Flutter.
+              Hi, I'm Aryan — a Senior Software Engineer at{' '}
+              <a href="https://www.thoughtworks.com/">Thoughtworks</a> with 6+ years specializing in
+              backend and full-stack development. I architect distributed systems and microservices
+              using JavaScript, TypeScript, Python, React, Node.js and React Native with a focus on
+              scalability and performance.
             </p>
 
             <p>
-              I'm currently working as a Technical Lead at{' '}
-              <a href="https://gluelabs.com/">Glue Labs</a>, where I lead product development and
-              mentor teams. I've had the opportunity to work on various exciting projects including{' '}
-              <a href="https://fifo.im">FIFO</a>, <a href="https://glue.is">Glue</a>,{' '}
-              <a href="https://id.glue.is">Glue Identity</a>, and several other innovative
-              solutions.
+              As a Technical Lead at <a href="https://gluelabs.com/">Glue Labs</a>, where I lead
+              product development and mentor teams. I've had the opportunity to work on various
+              exciting projects including <a href="https://fifo.im">FIFO</a>,{' '}
+              <a href="https://glue.is">Glue</a>, <a href="https://id.glue.is">Glue Identity</a>,
+              and several other innovative solutions.
             </p>
 
             <p>
-              I'm also incredibly excited about my personal project{' '}
+              I'm also creator and incredibly excited to present{' '}
               <a href="https://dashgen.in">Dashgen</a> - an AI-powered platform that I'm building to
               revolutionize how an individual interact with LLMs. It provides a unified interface
-              for working with various AI models like OpenAI, Anthropic, Grok, Gemini(Google Gen AI)
-              and Mistral. I'd love for you to check it out!
+              for working with various AI models like OpenAI, Anthropic, Google Gemini, Mistral, xAI
+              and DeepSeek. I'd love for you to check it out!
             </p>
 
             <p>
@@ -176,12 +233,30 @@ const About = () => {
               work well but are also enjoyable to use.
             </p>
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Here are the technologies I've been working with:</p>
           </div>
 
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
+          <div className="skills-container">
+            <div>
+              <h3 className="skills-category">Languages</h3>
+              <p className="skills-text">{skills.languages.join(', ')}</p>
+            </div>
+
+            <div>
+              <h3 className="skills-category">Backend</h3>
+              <p className="skills-text">{skills.backend.join(', ')}</p>
+            </div>
+
+            <div>
+              <h3 className="skills-category">Tools & DevOps</h3>
+              <p className="skills-text">{skills.devops.join(', ')}</p>
+            </div>
+
+            <div>
+              <h3 className="skills-category">Frontend</h3>
+              <p className="skills-text">{skills.frontend.join(', ')}</p>
+            </div>
+          </div>
         </StyledText>
 
         <StyledPic>

@@ -87,9 +87,18 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a className="email-link" href="mailto:aryankush025@gmail.com" target="_blank" rel="noreferrer">
-      Get In Touch
-    </a>
+    <div style={{ display: 'flex', gap: '20px' }}>
+      <a
+        className="email-link"
+        href="mailto:aryankush025@gmail.com"
+        target="_blank"
+        rel="noreferrer">
+        Get In Touch
+      </a>
+      <a className="email-link" href="https://v1.aryankush25.com/" target="_blank" rel="noreferrer">
+        View New Portfolio
+      </a>
+    </div>
   );
 
   const items = [one, two, three, four, five];

@@ -1,5 +1,4 @@
 ---
-date: '2023-08-01'
 title: 'Hotcoldbags'
 github: ''
 external: 'https://hotcoldbags.com/'

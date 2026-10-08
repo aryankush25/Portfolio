@@ -178,6 +178,7 @@ const Projects = () => {
         edges {
           node {
             frontmatter {
+              date
               title
               tech
               github
@@ -207,7 +208,10 @@ const Projects = () => {
   }, []);
 
   const GRID_LIMIT = 6;
-  const projects = data.projects.edges.filter(({ node }) => node);
+  // Undated projects go after dated ones (GraphQL sorts missing dates first)
+  const projects = data.projects.edges
+    .filter(({ node }) => node)
+    .sort((a, b) => !a.node.frontmatter.date - !b.node.frontmatter.date);
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;
 

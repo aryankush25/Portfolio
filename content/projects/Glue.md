@@ -1,8 +1,8 @@
 ---
-date: '2024-05-01'
+date: '2021-10-01'
 title: 'Glue'
 github: ''
-external: 'https://glue.is/'
+external: ''
 tech:
   - Next.js
   - NestJS

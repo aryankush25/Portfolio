@@ -1,5 +1,4 @@
 ---
-date: '2024-06-01'
 title: 'Sortly'
 github: ''
 external: 'https://www.sortly.com/'
@@ -10,7 +9,7 @@ tech:
   - Jira
   - Bitbucket
 company: 'GeekyAnts'
-showInProjects: true
+showInProjects: false
 ---
 
 Worked on a React-based application with state management and styled components, ensuring high-quality code practices.

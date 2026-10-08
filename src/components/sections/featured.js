@@ -253,7 +253,8 @@ const StyledProject = styled.li`
       opacity: 0.25;
     }
 
-    a {
+    a,
+    .image-wrapper {
       width: 100%;
       height: 100%;
       background-color: var(--green);
@@ -365,7 +366,7 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      {external ? <a href={external}>{title}</a> : title}
                     </h3>
 
                     <div
@@ -402,9 +403,15 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
+                  {external || github ? (
+                    <a href={external ? external : github}>
+                      <GatsbyImage image={image} alt={title} className="img" />
+                    </a>
+                  ) : (
+                    <div className="image-wrapper">
+                      <GatsbyImage image={image} alt={title} className="img" />
+                    </div>
+                  )}
                 </div>
               </StyledProject>
             );

@@ -2,18 +2,24 @@
 date: '1'
 title: 'Dashgen'
 cover: './dashgen.png'
+github: 'https://github.com/aryankush25/dashgen-architecture'
 external: 'https://dashgen.in'
 cta: 'https://dashgen.in/register'
 tech:
+  - NestJS
+  - PostgreSQL (RDS)
+  - LangChain
+  - Docker
+  - Caddy
+  - Terraform
+  - GitHub Actions
+  - AWS
   - Next.js
   - TailwindCSS
-  - React Query
   - Zustand
-  - NestJS
-  - PostgreSQL
-  - Redis
-  - LangChain
 showInProjects: true
 ---
 
-Currently building a platform to interact with LLMs (e.g., OpenAI, Anthropic, Google Gemini, Mistral, xAI and DeepSeek) using API keys in one unified interface. The platform provides a seamless way to integrate and manage multiple AI models through a single, user-friendly dashboard.
+_Founder · 09/2024 – Present_
+
+A platform to interact with multiple LLMs (OpenAI, Anthropic, Mistral, Groq, Google Gen AI, xAI, DeepSeek) through your own API keys in a single, unified interface. 100+ active users, built and operated solo. Terraform-managed AWS across three environments.

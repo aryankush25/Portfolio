@@ -1,5 +1,4 @@
 ---
-date: '2023-06-01'
 title: 'Acrobody'
 github: ''
 external: 'https://acrobody.com/'

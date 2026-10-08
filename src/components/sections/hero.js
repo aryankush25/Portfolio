@@ -61,28 +61,28 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Aryan Agarwal.</h2>;
-  const three = <h3 className="big-heading">I build innovative software solutions.</h3>;
+  const three = (
+    <h3 className="big-heading">
+      Senior Software Engineer | Technical Lead | Backend &{' '}
+      <span style={{ whiteSpace: 'nowrap' }}>Full-Stack</span>
+    </h3>
+  );
   const four = (
     <>
       <p>
-        I'm a Senior Software Engineer at{' '}
+        Senior Software Engineer and Technical Lead with nearly 8 years building backend and
+        full-stack systems in Node.js and TypeScript. Currently leading a team at{' '}
         <a href="https://www.thoughtworks.com/" target="_blank" rel="noreferrer">
           Thoughtworks
         </a>{' '}
-        and former Technical Lead at{' '}
-        <a href="https://gluelabs.com/" target="_blank" rel="noreferrer">
-          Glue Labs
-        </a>
-        , with 6+ years of experience in software development, specializing in building scalable and
-        innovative solutions.
+        on a logistics platform for Apple.
       </p>
       <p>
-        Currently, I'm building{' '}
+        Also built and operate{' '}
         <a href="https://dashgen.in/" target="_blank" rel="noreferrer">
           Dashgen
-        </a>{' '}
-        — a unified platform for multiple AI models including OpenAI, Anthropic, Google Gemini,
-        Mistral, xAI and DeepSeek.
+        </a>
+        , a multi-provider LLM platform, solo.
       </p>
     </>
   );
@@ -95,8 +95,8 @@ const Hero = () => {
         rel="noreferrer">
         Get In Touch
       </a>
-      <a className="email-link" href="https://v1.aryankush25.com/" target="_blank" rel="noreferrer">
-        View New Portfolio
+      <a className="email-link" href="https://aryankush25.com" target="_blank" rel="noreferrer">
+        View Main Portfolio
       </a>
     </div>
   );

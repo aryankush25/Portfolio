@@ -2,7 +2,7 @@
 date: '2024-05-01'
 title: 'Glue'
 github: ''
-external: 'https://glue.is/'
+external: ''
 tech:
   - Next.js
   - NestJS

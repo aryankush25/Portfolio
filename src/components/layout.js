@@ -4,6 +4,9 @@ import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
 
+// The intro loader plays once per browser session
+const LOADER_SEEN_KEY = 'loaderSeen';
+
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,6 +16,25 @@ const StyledContent = styled.div`
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
+
+  useEffect(() => {
+    try {
+      if (window.sessionStorage.getItem(LOADER_SEEN_KEY)) {
+        setIsLoading(false);
+      }
+    } catch (e) {
+      // sessionStorage unavailable; keep the loader
+    }
+  }, []);
+
+  const finishLoading = () => {
+    try {
+      window.sessionStorage.setItem(LOADER_SEEN_KEY, 'true');
+    } catch (e) {
+      // sessionStorage unavailable; the loader will play again next time
+    }
+    setIsLoading(false);
+  };
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
@@ -59,7 +81,7 @@ const Layout = ({ children, location }) => {
           </a>
 
           {isLoading && isHome ? (
-            <Loader finishLoading={() => setIsLoading(false)} />
+            <Loader finishLoading={finishLoading} />
           ) : (
             <StyledContent>
               <Nav isHome={isHome} />

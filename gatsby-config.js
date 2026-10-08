@@ -2,10 +2,10 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Aryan Agarwal',
+    title: 'Aryan Agarwal | Senior Software Engineer & Technical Lead',
     description:
-      'Aryan Agarwal is a Technical Lead with 5+ years of experience in software development, specializing in building scalable and innovative solutions.',
-    siteUrl: 'https://aryankush25.com', // No trailing slash allowed!
+      'Aryan Agarwal is a Senior Software Engineer and Technical Lead with nearly 8 years building backend and full-stack systems in Node.js and TypeScript.',
+    siteUrl: 'https://v1.aryankush25.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@aryankush25',
   },
@@ -16,7 +16,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        sitemap: '/sitemap/sitemap-index.xml',
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

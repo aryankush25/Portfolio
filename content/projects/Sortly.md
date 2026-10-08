@@ -10,7 +10,7 @@ tech:
   - Jira
   - Bitbucket
 company: 'GeekyAnts'
-showInProjects: true
+showInProjects: false
 ---
 
 Worked on a React-based application with state management and styled components, ensuring high-quality code practices.

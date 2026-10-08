@@ -7,7 +7,10 @@ range: 'February 2025 - Present'
 url: 'https://www.thoughtworks.com/'
 ---
 
-- Thoughtworks is a global leader in tech, driving innovation through strategic design and engineering
-- Increased application performance by 40% through optimizing backend services and algorithms
-- Oversaw development of 15 microservices, each handling over 200,000 transactions/month
-- Drove down bugs by 30% in production releases by automating end-to-end testing protocols
+Embedded with Apple's engineering team, building and evolving its shipping exception management platform.
+
+- Lead a team of 6 engineers delivering a shipping exception management platform, owning delivery across React frontends and Node.js services.
+- Built the MVP and proofs of concept, then owned delivery across multiple phases through production launch; the work received formal commendation from Apple product leadership.
+- Designed a questionnaire-driven workflow engine that replaced manual exception triage.
+- Replaced HTTP polling with WebSockets, eliminating ~1MB of redundant traffic every 3 seconds.
+- Primary technical contact for client stakeholders across product, backend and QA; run architecture reviews and set the team's TypeScript, testing and state-management standards.

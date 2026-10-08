@@ -2,16 +2,19 @@
 date: '3'
 title: 'FIFO'
 cover: './fifo.png'
-external: 'https://fifo.im'
-cta: 'https://fifo.im'
 tech:
-  - Next.js
-  - NestJS
-  - TailwindCSS
-  - React Query
+  - React Native
+  - Firebase
+  - React
+  - Node.js
+  - GraphQL
   - PostgreSQL
-  - Redis
   - Deepstream
+  - NestJS
+  - Kafka
+  - TimescaleDB
 ---
 
-Built a blogging platform to explore insights about D2C businesses, offering users real-time interactions and scalable infrastructure. The platform combines modern web technologies to create an engaging and performant user experience while maintaining robust backend systems.
+_Technical Lead, Glue Labs · 10/2021 – 01/2025_
+
+Real-time voice app that pivoted into a content publishing platform. React Native + Firebase, then React, Node.js, GraphQL and PostgreSQL; Deepstream pub/sub for real-time rooms; NestJS events service with Kafka and TimescaleDB.
